@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    height: 1800px;
+    font-size: 16px;
+}
+
+:root {
+    /* --main-color: #F05123; */
+    --main-color: #285e61;
+    /* --main-color: #FF4245; */
+}
+
+*::selection {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+
+a:hover {
+    text-decoration: underline!important;
+}
+
+.update-title {
+    /* color: var(--main-color); */
+    color: red;
+}
+
+h3.heading-table a {
+    font-size: 1.5rem;
+    color: red;
+    text-transform: uppercase;
+}
+
+h3.heading-table {
+    /* margin-top: 20px; */
+    margin: 20px 0;
+    font-size: 1.5rem;
+}
+
+table {
+    margin-top: 10px;
+    font-weight: normal;
+    width: 100%;
+    border-spacing: 2px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    text-align: left;
+    padding-left: 12px;
+    font-size: 16px;
+}
+
+tr th {
+    padding: 16px;
+    text-align: left;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 700;
+}
+
+tr td {
+    border: 1px solid #ddd;
+    padding: 16px;
+    
+}
+
+tr td:first-child a {
+    display: block;
+    font-weight: 700;
+    /* font-size: 16px; */
+    text-align: left;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+tr td:last-child a {
+    display: block;
+    font-weight: 700;
+    /* font-size: 16px; */
+    text-align: left;
+    text-decoration: none;
+    color: var(--main-color); 
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #E6FFFA;
+}
+
+/* -------------- */
+tr td:first-child, tr td:last-child {
+    width: 20%;
+}
+/* -------------- */
+@media screen and (max-width: 1124px) {
+    .container {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    tr td:first-child, tr td:last-child {
+        width: 33%;
+    }
+}
