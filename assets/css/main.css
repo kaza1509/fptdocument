@@ -130,6 +130,7 @@ tr td:first-child, tr td:last-child {
 footer {
     text-align: center;
     color:  var(--main-color);
+    margin-top: 20px;
 }
 
 footer i {
